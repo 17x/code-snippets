@@ -1,3 +1,7 @@
+// this code is a part of my project
+// assuming your origin image cling to canvas's left
+// if you need calc left first
+// considering recursively use '1/2 of current y' (it is similar with quick sort algorithm) to catch minimum opaque x
 const trimTransparency = (origin,cb) => {
     let { width, height } = origin;
     let newCanvas = document.createElement('canvas');
