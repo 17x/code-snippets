@@ -9,7 +9,6 @@ const trimTransparency = (origin,cb) => {
     const imageData = ctx.getImageData(0, 0, width, height);
     const { data } = imageData;
 
-    // console.log(data,width,height);
     let renderW = 0;
     let renderH = 0;
     let minX = 0;
@@ -18,7 +17,6 @@ const trimTransparency = (origin,cb) => {
     let maxY = 0;
     let currX = 0;
     let currY = 0;
-    // let y = Math.round(origin.height / 2);
     let flag = true
     let count = 0
 
