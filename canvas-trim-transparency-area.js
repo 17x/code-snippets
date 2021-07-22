@@ -7,7 +7,7 @@ const trimTransparency = (origin,cb) => {
     let newCanvas = document.createElement('canvas');
     let ctx = origin.getContext('2d');
     const imageData = ctx.getImageData(0, 0, width, height);
-    let { data } = imageData;
+    const { data } = imageData;
 
     // console.log(data,width,height);
     let renderW = 0;
